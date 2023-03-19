@@ -474,6 +474,10 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    outline: none;
+}
+
 a.red-link {
     color: var(--dark-grayish-blue);
 }
