@@ -631,6 +631,10 @@ header nav {
     color: var(--dark-grayish-blue);
 }
 
+.nav-active {
+    display: block;
+}
+
 @media screen and (max-width: 420px) { 
 
     body {
@@ -640,10 +644,6 @@ header nav {
 
     button {
         width: 60%;
-    }
-
-    .banner {
-        margin-top: 14%;
     }
 
     header {
