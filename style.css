@@ -531,7 +531,7 @@ header nav {
 }
 
 .mobile-nav {
-    display: none;
+    display: block;
 }
 
 .banner {
@@ -631,7 +631,7 @@ header nav {
     color: var(--dark-grayish-blue);
 }
 
-@media screen and (max-width: 420px) { 
+@media screen and (max-width: 520px) { 
 
     body {
         padding: 2rem;
@@ -658,8 +658,10 @@ header nav {
 
     .side-nav-icon {
         display: block;
-        margin-left: 75%;
+        position: relative;
+        right: 40px;
         z-index: 1;
+        cursor: pointer;
     }
     
     header nav.desktop-nav {
@@ -688,7 +690,9 @@ header nav {
         transition: transform 0.5s ease-in;
         z-index: 1;
     }
-
+   .mobile-nav.active {
+         transform: translateX(0);
+   }
     .menu li a {
         color: var(--very-dark-blue);
         font-size: 2rem;
@@ -699,6 +703,7 @@ header nav {
         margin-left: auto;
         margin-right: 4rem;
         margin-top: 4rem;
+        cursor: pointer;
     }
 
     .banner img {
