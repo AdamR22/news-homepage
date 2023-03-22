@@ -531,7 +531,7 @@ header nav {
 }
 
 .mobile-nav {
-    display: block;
+    display: none;
 }
 
 .banner {
